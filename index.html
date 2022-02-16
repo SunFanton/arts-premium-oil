@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Oleos para artistas">
+    <meta name="keywords" content="oil, oleo, artist, artista, paint, pintura">
+    <meta name="author" content="Sol Fanton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Premium Oil</title>
+    <link rel="icon" type="image/x-icon" href="images/vector3.jpg"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet"> 
+
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="page-header">
+      <header id="header">
+        <img id="header-img" src="images/logo.png" alt="Logotipo Arts Premium Oil">
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#caracteristicas">CARACTERISTICAS</a></li>
+            <li><a class="nav-link" href="#demo">DEMOSTRACION</a></li>
+            <li><a class="nav-link" href="#productos">PRODUCTOS</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div id="page-content">
+      <section id="main-image">
+        <img src="images/pintura2.jpg" alt="Imagen representativa de los oleos Arts Premium Oils">
+        <h2>OLEOS PREMIUM ARTESANALES</h2>
+      </section>
+
+      <section id="form">
+        <h3>Suscríbete a nuestro newsletter</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingresa tu email">
+          <input
+            type="submit"
+            id="submit"
+            name="submit"
+            value="Suscribirme">
+        </form>
+      </section>
+
+      <section id="caracteristicas">
+        <h2>CARACTERISTICAS</h2>
+        <ul id="caract">
+          <li>
+            <img src="images/item1.png" alt="imagen-pincel">
+            <p><strong>Pinceles</strong><br>Nuestro óleos premium son ideales para utilizar con todo tipo de pinceles y filamentos</p>
+          </li>
+          <li>
+            <img src="images/item2.png" alt="imagen-paleta">
+            <p><strong>Colores</strong><br>Gracias a los componentes de su pigmentación, Arts Premium Oil permite conseguir una infinita variedad de colores brillantes y únicos</p>
+          </li>
+          <li>
+            <img src="images/item3.png" alt="imagen-cinta">
+            <p><strong>Reconocimiento</strong><br>Nuestro trabajo se encuentra avalado por las principales compañías de productos artísticos internacionales</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="demo">
+        <h2>DEMOSTRACION DE CALIDAD</h2>
+        <p>En este video, pueden apreciar la textura de nuestros pigmentos, como así también los pasos básicos para comenzar a utilizarlos en cualquier obra pictórica</p>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hDAGN3-chdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section id="productos">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <p>Arts Premium Oil es una empresa tradicional dedicada a la producción y venta de pigmentos al óleo. En esta sección, pueden escoger el color personalizado y el tamaño de envase que desean adquirir en función de sus necesidades artísticas</p>
+
+        <div class="product">
+          <span class="oil" id="small">
+            <h3>Pequeño - 32ml</h3>
+            <h4>$ 350</h4>
+            <img src="images/small.png" alt="Pomo tamaño pequeño">
+            <form id="form-prod">
+              <label for="color">Elige un color de la paleta</label>
+              <input type="color" id="color">
+            </form>
+            <button class="btn">AÑADIR</button>
+          </span>
+
+          <span class="oil" id="medium">
+            <h3>Mediano - 60ml</h3>
+            <h4>$ 600</h4>
+            <img src="images/medium.png" alt="Pomo tamaño mediano">
+            <form id="form-prod">
+              <label for="color">Elige un color de la paleta</label>
+              <input type="color" id="color">
+            </form>
+            <button class="btn">AÑADIR</button>
+          </span>
+
+          <span class="oil" id="large">
+            <h3>Grande - 120ml</h3>
+            <h4>$ 1200</h4>
+            <div id="product-back"></div>
+            <img src="images/large.png" alt="Pomo tamaño grande">
+            <form id="form-prod">
+              <label for="color">Elige un color de la paleta</label>
+              <input type="color" id="color">
+            </form>
+            <button class="btn">AÑADIR</button>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-footer">
+      <footer>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>© Arts Premium Oil <br> Todos los derechos reservados</p>
+      </footer>
+    </div>
+
+  </body>
+</html>

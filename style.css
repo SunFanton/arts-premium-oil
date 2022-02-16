@@ -1,0 +1,689 @@
+body{
+    font-family: 'Quintessential', cursive;
+    letter-spacing: 2px;
+    background-image: url("images/palette.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #page-header, #page-content, #page-footer{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #page-header{
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 255, 255, 1);
+    box-shadow: 0 5px 10px rgb(104, 104, 104);
+    z-index: 9999;
+  }
+
+  #header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    height: 100%;
+  }
+
+  #header-img{
+    max-width: 30%;
+    max-height: 60%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    filter: drop-shadow(5px 5px 3px rgb(75, 75, 75));
+  }
+
+  #nav-bar a{
+    color: black;
+  }
+
+  #nav-bar li{
+    float: left;
+    max-width: 45%;
+    padding: 15px;
+    margin: 5px;
+    background: linear-gradient(to bottom,gray,white);
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  #nav-bar li:hover{
+    background: white;
+    box-shadow: 5px 5px 10px rgb(82, 82, 82);
+    color: rgba(47, 47, 47, 0.8);
+    cursor: pointer;
+  }
+
+  #page-content{
+    background:linear-gradient(to bottom, rgb(233, 233, 233, 0),rgb(233, 233, 233, 0.5));
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #page-content section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background:rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(43, 38, 28, 0.7);
+  }
+
+  #main-image img{
+    margin: auto;
+    max-width: fit-content;
+    max-height: 500px;
+    border-radius: 25px;
+    transition: transform .2s;
+  }
+
+  #main-image img:hover{
+    transform: scale(1.4);
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #page-content h2{
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(110, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #form h3{
+    font-size: 24px;
+    max-width: 80%;
+    margin: auto;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    border: 3px solid rgba(114, 114, 114, 0.3);
+    border-radius: 25px;
+  }
+
+  #form #email{
+    font-size: 21px;
+    background-color: azure;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(104, 104, 104);
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #form #submit{
+    font-size: 24px;
+    background: linear-gradient(to top,white,rgb(139, 139, 139));
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  #form #submit:hover{
+    background: white;
+    box-shadow: 5px 5px 5px rgb(93, 93, 93);
+    cursor: pointer;
+  }
+
+  #caract strong{
+    font-size: 24px;
+  }
+
+  #caracteristicas li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 3px solid rgb(233, 233, 233, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: justify;
+    transition: transform .2s;
+  }
+
+  #caracteristicas li:hover{
+    box-shadow: 5px 5px 7px rgba(97, 97, 97, 0.6);
+    transform: scale(1.2);
+  }
+
+  #caract img{
+    max-width: 30%;
+    margin: 30px;
+    transition: transform .2s;
+  }
+
+  #caract img:hover{
+    transform: scale(1.5);
+  }
+
+  #demo p, #productos p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  #demo iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 20px;
+    transition: transform .2s;
+  }
+
+  #demo iframe:hover{
+    transform: scale(1.2);
+  }
+
+  .product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .oil{
+    background-color: white;
+    border: 3px solid rgb(116, 116, 116, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: calc(100%/3);
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .oil img{
+    max-height: 180px;
+    transition: transform .2s;
+  }
+
+  .oil img:hover{
+    transform: scale(2.4);
+  }
+
+  .oil h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 3.5px;
+  }
+
+  .oil h4{
+    font-size: 32px;
+    background-color: floralwhite;
+    border: 2px solid rgb(107, 107, 107, 0.9);
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .oil label{
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .oil button{
+    font-size: 24px;
+    font-family: 'Quintessential', cursive;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    background-color: rgb(95, 25, 12);
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .oil button:hover{
+    background: rgb(180, 0, 0);
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+  }
+
+  #page-footer{
+    background: linear-gradient(to bottom,rgb(233, 233, 233, 0.5),rgb(233, 233, 233, 0));
+    margin: auto;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    padding: 15px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+
+  footer li{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(238, 238, 238, 0.7);
+    box-shadow: 0px 5px 10px rgb(82, 82, 82);
+    border-radius: 15px;
+  }
+
+  footer p{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    color: black;
+    background-color: rgba(238, 238, 238, 0.3);
+    border-radius: 15px;
+  }
+
+  footer li:hover{
+    background: white;
+    box-shadow: 5px 5px 10px rgb(82, 82, 82);
+    color: rgba(47, 47, 47, 0.8);
+    cursor: pointer;
+  }
+
+  /*----------Media Queries----------*/
+  @media (min-width: 1100px) and (max-width: 1200px){
+
+    #nav-bar li{
+      max-width: 40%;
+      padding: 12px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    #main-image img{
+      max-width: fit-content;
+      max-height: 450px;
+    }
+    
+  }
+
+
+  @media (min-width: 1000px) and (max-width: 1100px){
+
+    #nav-bar li{
+      max-width: 35%;
+      padding: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    #main-image img{
+      max-width: fit-content;
+      max-height: 400px;
+    }
+
+    .oil img{
+      max-height: 200px;
+    }
+  }
+
+  @media (min-width: 720px) and (max-width: 1000px){
+
+    #header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: auto;
+      height: 100%;
+    }
+
+    #nav-bar li{
+      max-width: 45%;
+      padding: 10px;
+      margin: 5px;
+      background: linear-gradient(to bottom,rgb(160, 160, 160),white);
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    #page-content{
+      margin-top: 20%;
+    }
+
+    #page-content h2{
+      font-size: 30px;
+      text-align: center;
+    }
+
+    #main-image img{
+      max-width: fit-content;
+      max-height: 350px;
+    }
+
+     #form #submit{
+      font-size: 21px;
+    }
+
+    #caracteristicas li, #demo p, #productos p{
+      font-size: 21px;
+    }
+
+    #caracteristicas li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .oil img{
+      max-height: 160px;
+    }
+
+    .oil h3{
+      font-size: 24px;
+    }
+
+    .oil h4{
+      font-size: 28px;
+    }
+
+    .oil button{
+      font-size: 20px;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer ul{
+      max-width: 100%;
+      padding: 5px;
+    }
+
+    footer li{
+      font-size: 15px;
+      margin: 5px;
+    }
+
+    footer p{
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 450px) and (max-width: 720px){
+
+    #header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-basis: auto;
+      height: 100%;
+    }
+
+    #nav-bar ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #nav-bar li{
+      max-width: 45%;
+      padding: 5px;
+      margin: 3px;
+      font-size: 0.8em;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      background: white;
+      margin: auto;
+    }
+
+    #nav-bar li:hover{
+      background: white;
+      box-shadow: none;
+    }
+
+    #main-image img{
+      max-width: fit-content;
+      max-height: 225px;
+    }
+
+    #page-content{
+      margin-top: 25%;
+    }
+
+    #page-content h2{
+      font-size: 24px;
+      text-align: center;
+    }
+
+    #form h3, #form #submit{
+      font-size: 18px;
+    }
+
+    #caracteristicas li, #demo p, #productos p{
+      font-size: 18px;
+    }
+
+    #caracteristicas li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .oil img{
+      max-height: 110px;
+    }
+
+    .oil h3{
+      font-size: 18px;
+    }
+
+    .oil h4{
+      font-size: 18px;
+    }
+
+    .oil button{
+      font-size: 18px;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer ul{
+      max-width: 100%;
+      padding: 5px;
+    }
+
+    footer li{
+      font-size: 15px;
+      margin: 5px;
+    }
+
+    footer p{
+      font-size: 16px;
+    }
+
+  }
+
+  @media (max-width: 450px){
+
+    #header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-basis: auto;
+      height: 100%;
+    }
+
+    #nav-bar ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #nav-bar li{
+      max-width: 45%;
+      padding: 5px;
+      margin: 3px;
+      font-size: 0.6em;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      background: white;
+      margin: auto;
+    }
+
+    #nav-bar li:hover{
+      background: white;
+      box-shadow: none;
+    }
+
+    #main-image img{
+      max-width: fit-content;
+      max-height: 180px;
+    }
+
+    #page-content{
+      margin-top: 25%;
+    }
+
+    #page-content h2{
+      font-size: 21px;
+      text-align: center;
+    }
+
+    #form h3, #form #submit{
+      font-size: 16px;
+    }
+
+    #caracteristicas li, #demo p, #productos p{
+      font-size: 16px;
+    }
+
+    #caracteristicas li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .oil img{
+      max-height: 90px;
+    }
+
+    .oil h3{
+      font-size: 16px;
+    }
+
+    .oil h4{
+      font-size: 16px;
+    }
+
+    .oil button{
+      font-size: 16px;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer ul{
+      max-width: 100%;
+      padding: 5px;
+    }
+
+    footer li{
+      font-size: 12px;
+      margin: 5px;
+    }
+
+    footer p{
+      font-size: 12px;
+    }
+
+  }
+
+ 
+  
+
+
